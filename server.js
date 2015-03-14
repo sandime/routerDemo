@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 
 //set up one route to the index.html file
 
-app.get('*', function (req, resp) {
+app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname + '/public/views/index.html'));
 
 });

@@ -2,7 +2,7 @@
  * Created by SHERRI on 3/14/15.
  */
 //adds routes to our app
-angular.module('routerApp', ['routerRoutes'])
+angular.module('routerApp', ['routerRoutes', 'ngAnimate'])
 
 // create the controller and inject Angular's
 // this will be the controller for the ENTIRE site

@@ -1,6 +1,7 @@
 /**
  * Created by SHERRI on 3/14/15.
  */
+//adds routes to our app
 angular.module('routerApp', ['routerRoutes'])
 
 // create the controller and inject Angular's

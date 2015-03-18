@@ -1,4 +1,7 @@
 /**
+ * Created by SHERRI on 3/18/15.
+ */
+/**
  * Created by SHERRI on 3/14/15.
  */
 // inject ngRoute for all our routing needs
@@ -8,10 +11,10 @@ app.config(function($routeProvider, $locationProvider) {
 // route for the home page
     $routeProvider
         .when('/', {
-        templateUrl: 'views/pages/home.html',
-        controller: 'homeController',
-        controllerAs: 'home'
-    })
+            templateUrl: 'views/pages/home.html',
+            controller: 'homeController',
+            controllerAs: 'home'
+        })
 // route for the about page
         .when('/about', {
             templateUrl: 'views/pages/about.html',
@@ -24,12 +27,9 @@ app.config(function($routeProvider, $locationProvider) {
             controller: 'contactController',
             controllerAs: 'contact'
         })
-     .otherwise({
-    redirectTo: "/"
-  });
+        .otherwise({
+            redirectTo: "/"
+        });
     //set our app up to have pretty URLS
     $locationProvider.html5Mode(true);
 });
-
-
-
